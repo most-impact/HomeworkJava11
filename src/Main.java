@@ -4,16 +4,10 @@ public class Main {
         Author williamShakespeare = new Author("William", "Shakespeare");
 
         Book tomSawyer = new Book("Tom Sawyer", markTwain, 1876);
+        Book tomSawyer1 = new Book("Tom Sawyer", markTwain, 1876);
         Book romeoAndJuliet = new Book("Romeo and Juliet", williamShakespeare, 1591);
 
-        // System.out.println(tomSawyer.getAuthor());
-        // System.out.println(tomSawyer.getName());
-        // System.out.println(tomSawyer.getYear());
-
-        // System.out.println(romeoAndJuliet.getYear());
-        romeoAndJuliet.setYear(1595);
-        // System.out.println(romeoAndJuliet.getYear());
-        // System.out.println(romeoAndJuliet.getName());
-        // System.out.println(romeoAndJuliet.getAuthor());
+        System.out.println(tomSawyer.equals(tomSawyer1)); // should return true
+        System.out.println(tomSawyer.equals(romeoAndJuliet)); // should return false
     }
 }
